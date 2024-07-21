@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Hall of Famer Predictive Models</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>NBA Hall of Famer Predictive Models</h1>
+        <h2>Team Members</h2>
+        <ul>
+            <li>Mangrulkar Aishwary Suresh - Reporter</li>
+            <li>Jain Anant - Validator</li>
+            <li>O’Neal Dylan - Facilitator</li>
+            <li>Patel Harsh Hitendrabhai - Validator</li>
+            <li>Bashetty Sahithi - Recorder</li>
+        </ul>
+    </header>
+    
+    <section>
+        <h2>Summary</h2>
+        <p>The NBA Hall of Fame honors players who have shown exceptional skill at basketball, all-time great coaches, referees, and other major contributors to the sport. The NBA Stats (1947 – Present) dataset was used to develop a model to predict Hall of Fame players in the NBA. We utilized SAS EM and modeled the data using logistic regressions, a decision tree, and a neural network. We compared all the models we developed to determine which was the best predictor. After observing the models, we identified areas of improvement that could enhance all the models.</p>
+    </section>
+
+    <section>
+        <h2>Data Dictionary</h2>
+        <!-- Add relevant content here -->
+    </section>
+
+    <section>
+        <h2>Data Preparation: Pre-Work & Joining</h2>
+        <p>The dataset we used in this project contains 21 files, 499 columns, and between 5200 and 32000 rows for most files. It contains all major, minor, and advanced recorded basketball stats for each player. We identified 3 tables within the dataset that contained all the information we needed: “Player Career Info”, “Player Totals”, and “Player Award Shares”. Joining the tables on “season ID” and “player ID” introduced us to new issues with the data.</p>
+    </section>
+
+    <section>
+        <h2>Data Alterations: Excel & SAS EM</h2>
+        <p>The main issue presented from joining the tables was the non-uniformity of the data. We had to create and execute many Excel formulas to make the data uniform in a player totals format instead of a seasonal format.</p>
+    </section>
+
+    <section>
+        <h2>Models: SAS Enterprise Miner</h2>
+        <h3>Logistic Regression</h3>
+        <p>We identified that at least one logistic regression, a decision tree, and a neural network would be necessary.</p>
+
+        <h3>Decision Tree Model</h3>
+        <p><!-- Add content here --></p>
+
+        <h3>Model Results</h3>
+        <ul>
+            <li>Logistic Regression – Main Stats</li>
+            <li>Logistic Regression - Stepwise</li>
+            <li>Decision Tree</li>
+            <li>Neural Network</li>
+        </ul>
+
+        <h3>Model Results – ROC Curve</h3>
+        <img src="img.jpg" alt="ROC Curve">
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>The Neural Network Model performed the best in predicting NBA Hall of Famers. Improvements to the False Negative Ratios of the other models by including the intangible considerations of Hall of Fame prospects.</p>
+    </section>
+</body>
+</html>
